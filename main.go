@@ -17,10 +17,11 @@ func main() {
 
 
 	func canHold(w1 int, l1 int, w2 int, l2 int)  bool {
+	w1, l1 := 15,20
+	w2, l2 := 10, 15
 	rectangle1 := w1 * l1
 	rectangle2 := w2 * l2
-	result = rectangle1 > rectangle 2
-	return result
+	
 
 
 	}

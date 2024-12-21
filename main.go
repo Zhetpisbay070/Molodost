@@ -10,69 +10,63 @@ func fibonacci(n int) int {
 	return f2
 }
 
-//return n-th number from fibonacci sequence
-func main() {
-	fmt.Println(fibonacci(6))
+func canHold(w1, l1, w2, l2 int) bool {
+	rectangle1 := w1 * l1
+	rectangle2 := w2 * l2
+	res := rectangle1 > rectangle2
+	fmt.Println(res)
+	return res
 }
 
-//func canHold(w1, l1, w2, l2 int) bool {
-//	rectangle1 := w1 * l1
-//	rectangle2 := w2 * l2
-//	res := rectangle1 > rectangle2
-//	fmt.Println(res)
-//	return res
-//}
-//
-//func main() {
-//	if canHold(10, 20, 9, 19) {
-//		fmt.Println()
-//	}
-//}
+func quessNumber(n int) string {
+	var res string
+	fmt.Println(res)
+	switch n {
+	case 0:
+		fmt.Println("zero")
+	case 1:
+		fmt.Println("one")
+	case 2:
+		fmt.Println("two")
+	case 3:
+		fmt.Println("three")
+	case 4:
+		fmt.Println("four")
+	case 5:
+		fmt.Println("five")
+	case 6:
+		fmt.Println("six")
+	case 7:
+		fmt.Println("seven")
+	case 8:
+		fmt.Println("eight")
+	case 9:
+		fmt.Println("nine")
+	case 10:
+		fmt.Println("ten")
+	default:
+		fmt.Println("lohi")
+	}
+	return res
+}
 
-//func quessNumber(n int) string {
-//	var res string
-//	fmt.Println(res)
-//	return res
-//
-//}
-//
-//func main() {
-//	number := 5
-//	switch number {
-//	case 1:
-//		fmt.Println("one")
-//	default:
-//		fmt.Println("lohi")
-//	}
-//}
+func pow(n int, p int) int {
+	var res int
+	res = 1
+	for i := 0; i < p; i++ {
+		res = res * n
+	}
+	return res
+}
 
-//func quessNumber(n int) string {
-//	var res string
-//	switch n {
-//	case 1:
-//		res = "one"
-//	default:
-//		fmt.Println("ebeiii")
-//
-//	}
-//	return res
-//}
-//func main() {
-//	fmt.Println(quessNumber(2))
+func main() {
+	fmt.Println(fibonacci(10))
 
-//	fmt.Println(fibonacci(5))
-//}
-//
-////func fibonacci(n int) int {
-////	var res int
-////	f1 := 0
-////	f2 := 1
-////	f3 := f1 + f2
-////	res = f2 + f3
-////
-////	for i := 2; i <= 5; i++ {
-////		fmt.Println()
-////	}
-////
-////	//return n-th number from fibonacci sequence
-////	return res
+	if canHold(10, 20, 9, 19) {
+	}
+
+	fmt.Println(quessNumber(0))
+
+	fmt.Println(pow(2, 2))
+
+}
